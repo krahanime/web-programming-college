@@ -121,7 +121,7 @@ Author
 
 ### Nasrul Wahabi
 
-* [sibeux.my.id/HabiqiYT/](sibeux.my.id/HabiqiYT/)
+* [sibeux.my.id/HabiqiYT](sibeux.my.id/HabiqiYT)
 
 License
 -------
