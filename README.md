@@ -1,4 +1,4 @@
-# web-progarmming-college
+# web-programming-college
 
 
 Web Developer
@@ -119,10 +119,9 @@ Supported by:
 Author
 ------
 
-### Chris Pederick
+### Nasrul Wahabi
 
-* [http://chrispederick.com/](http://chrispederick.com/)
-* [http://twitter.com/chrispederick/](http://twitter.com/chrispederick/)
+* [https://sibeux.my.id/HabiqiYT/](https://sibeux.my.id/HabiqiYT)
 
 License
 -------
