@@ -119,61 +119,21 @@
                 </div>
             </header>
             <div class="row" id="data">
-                <?php
-                require_once('./db.php');
-
-                $sql = "SELECT * FROM film";
-
-                $result =  $db->query($sql);
-                
-                while ($row = $result->fetch_assoc()) :
-                
-                ?>
-                <div class="col col-lg-6 col-xl-4">
-                    <div class="product-container">
-                        <div class="product-card">
-                            <a href="film_detail.php?op=detail&id=<?=$row['film_id']?>" style="text-decoration: none">
-                                <img width="95" height="135"
-                                    src='https://picsum.photos/95/135?random=<?=$row['film_id']?>' alt=""
-                                    title="<?= ucwords($row['title']) ?>" />
-                            </a>
-                            <div class="product-body">
-                                <a href="film_detail.php?op=detail&id=<?=$row['film_id']?>"
-                                    style="text-decoration: none;">
-                                    <span class="product-title"><?= ucwords($row['title']) ?></span>
-                                </a>
-                                <div class="product-price"><?= $row['description'] ?>
-                                </div>
-                                <div class="product-discount">
-                                    <?php
-                                        $genre = explode(" ", $row['rating']);
-                                        for ($i = 0; $i < count($genre); $i++){
-                                            echo "<a style='text-decoration: none;'>";
-                                            echo "<span class='$genre[$i]'>$genre[$i]</span>";
-                                            echo "</a>";
-                                        }
-                                        $year = $row['release_year'];
-                                        $length = $row['length'];
-                                        $id = $row['film_id'];
-                                        echo "<span class='year'>$year</span>";
-                                        $duration_minute = $length % 60;
-                                        $duration_hour = ($length - $duration_minute) / 60;
-                                        echo "<span class='cost'>{$duration_hour}h {$duration_minute}m</span>";
-                                        echo "<br><br>";
-                                        echo "<a href='film_detail.php?op=detail&id={$id}' style='text-decoration: none;'>";
-                                        echo "<span class='detail'>Detail</span>";
-                                        echo "</a>";
-                                        ?>
-                                </div>
-                                <div class="btn">
-                                    <i class='bx bxs-edit-alt'></i>
-                                    <i class='bx bxs-trash'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php endwhile; ?>
+                <!-- ================================================================================= -->
+                <!-- lazy load omage -->
+                <!-- <?php 
+                            if ($lazy < 10){
+                            echo    "<img width='95' height='135'
+                                    src='https://picsum.photos/95/135?random={$row['film_id']}' alt=''
+                                    title='{$row['title']}' />";
+                                    $lazy++;
+                            }else{
+                                echo    "<img width='95' height='135' class='lazy'
+                                    data-src='https://picsum.photos/95/135?random={$row['film_id']}' alt=''
+                                    title='{$row['title']}' />";
+                            }
+                            ?> -->
+                <!-- ================================================================================= -->
             </div>
         </div>
         <footer>
@@ -248,7 +208,8 @@
     <script src="script.js"></script>
     <script src="script-sort.js"></script>
     <script src="script-filter.js"></script>
-    <!-- <script src="script-search-sort.js"></script> -->
+    <script src="lazy-load.js"></script>
+    <script src="get-data.js"></script>
 </body>
 
 </html>
