@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `language`
+-- Strukturr dari tabel `language`
 --
 
 CREATE TABLE `language` (
