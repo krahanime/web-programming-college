@@ -7,10 +7,6 @@ Web Developer
 The Web Developer extension adds various web developer tools to a browser.
 The extension is available for Chrome, Firefox and Opera, and will run on any platform that these browsers support including Windows, OS X and Linux.
 
-The extension can be installed from its home page:
-
-* Home page: [http://chrispederick.com/work/web-developer/](http://chrispederick.com/work/web-developer/)
-
 Or directly from the Chrome, Firefox or Opera extension repositories:
 
 * Chrome: [https://chrome.google.com/webstore/detail/bfbameneiokkgbdmiekhjnmfkcnldhhm](https://chrome.google.com/webstore/detail/bfbameneiokkgbdmiekhjnmfkcnldhhm)
@@ -37,7 +33,7 @@ Help for the Web Developer extension can be found on its home page:
 
 To report a new issue or suggest a new feature please contact me:
 
-* Contact: [http://chrispederick.com/contact/](http://chrispederick.com/contact/)
+* Contact: wahabinasrul@gmail.com
 
 Developers
 ----------
