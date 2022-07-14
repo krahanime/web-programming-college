@@ -65,7 +65,7 @@ membagikan makanan berbuka puasa di Riyadh, Arab Saudi, 3 April 2022."
             <img src="img/2.jpeg" alt="">
             <p><?php echo $element2 ?></p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Read More</button>
+                <button class="btn btn-primary me-md-2" type="button">Reade More</button>
             </div>
         </div>
         <br>

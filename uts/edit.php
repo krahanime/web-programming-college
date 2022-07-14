@@ -105,7 +105,7 @@ if(isset($_POST['simpan'])){ // untuk create
 <body>
     <div class="row">
         <div class="col-lg-4">
-            <!-- untuk memasukkan data -->
+            <!-- untuk memasukkan dataaa -->
         <div class="card">
             <h5 class="card-header bg-info">Edit Data</h5>
             <div class="card-body">
